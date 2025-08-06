@@ -21,6 +21,43 @@ public class HomePage {
         clickLink("Hovers");
         return new HoversPage(driver);
     }
+    public KeyPressesPage clickKeyPresses(){
+        clickLink("Key Presses");
+        return new KeyPressesPage(driver);
+    }
+    public JavaScriptAlertsPage clickJavaScriptAlerts(){
+        clickLink("JavaScript Alerts");
+        return new JavaScriptAlertsPage(driver);
+    }
+    public FileUploadPage clickFileUpload(){
+        clickLink("File Upload");
+        return new FileUploadPage(driver);
+    }
+    public EntryAdPage clickEntryAd(){
+        clickLink("Entry Ad");
+        return new EntryAdPage(driver);
+    }
+    public FramesPage clickFrames(){
+        clickLink("Frames");
+        return new FramesPage(driver);
+    }
+    public DynamicLoadingPage clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
+
+    public LargeAndDeepDomPage clickLargeAndDeepDom(){
+        clickLink("Large & Deep DOM");
+        return new LargeAndDeepDomPage(driver);
+    }
+    public InfiniteScrollPage clickInfiniteScroll(){
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+    public MultipleWindowPage clickMultipleWindows(){
+        clickLink("Multiple Windows");
+        return new MultipleWindowPage(driver);
+    }
 
     private void clickLink(String linkText){
         driver.findElement(By.linkText(linkText)).click();
